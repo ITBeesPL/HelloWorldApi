@@ -1,3 +1,4 @@
+using HelloWorldApi.Controllers.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace HelloWorldApi.Controllers
