@@ -1,0 +1,41 @@
+###
+GET {{OperatorApi_HostAddress}}/weatherforecast?id=0&searchSummary=stringValue&countryGuid=00000000-0000-0000-0000-000000000000
+Accept: application/json
+Content-Type: application/json
+Authorization: bearer {{value}}
+
+
+###
+POST {{OperatorApi_HostAddress}}/weatherforecast
+Accept: application/json
+Content-Type: application/json
+Authorization: bearer {{value}}
+
+{
+  "date": "2024-01-01T00:00:00",
+  "temperatureC": 0,
+  "summary": "stringValue"
+}
+
+###
+PUT {{OperatorApi_HostAddress}}/weatherforecast
+Accept: application/json
+Content-Type: application/json
+Authorization: bearer {{value}}
+
+{
+  "id": 0,
+  "temperatureC": 0,
+  "summary": "stringValue"
+}
+
+###
+DELETE {{OperatorApi_HostAddress}}/weatherforecast
+Accept: application/json
+Content-Type: application/json
+Authorization: bearer {{value}}
+
+{
+  "id": 0
+}
+
